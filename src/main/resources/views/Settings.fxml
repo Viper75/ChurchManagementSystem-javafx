@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="551.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.viper75.churchmgt.controllers.SettingsController">
+
+    <stylesheets>
+        <URL value="@css/main.css" />
+    </stylesheets>
+    <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="800.0" spacing="5.0" styleClass="secondary-color" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Settings" textFill="#e8e8e8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="bg-light" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Utility Apllications">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <HBox fx:id="organizationSettingsHB" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="854.0" spacing="10.0" styleClass="setting">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/organization.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Organization Settings" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator layoutX="20.0" layoutY="40.0" prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="43.0" prefHeight="37.0" prefWidth="854.0" spacing="6.0" styleClass="setting">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/data-backup.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Backup Data" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="8.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="84.0" prefHeight="30.0" prefWidth="854.0" spacing="10.0" styleClass="setting">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/database-restore.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Restore Data" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

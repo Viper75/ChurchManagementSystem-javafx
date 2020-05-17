@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane fx:id="mainWindowBp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.viper75.churchmgt.controllers.MainWindowController">
+   <stylesheets>
+      <URL value="@css/main.css" />
+   </stylesheets>
+   <left>
+      <VBox fx:id="sideBarVB" prefHeight="593.0" prefWidth="160.0" styleClass="primary-color" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="toggleMenuBtn" alignment="TOP_LEFT" graphicTextGap="13.0" layoutX="10.0" layoutY="67.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="215.0" styleClass="primary-color" text="Menu" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="12.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/menu-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="membershipBtn" alignment="TOP_LEFT" graphicTextGap="8.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="215.0" styleClass="primary-color" text="Membership" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/membership.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="accountingBtn" alignment="TOP_LEFT" graphicTextGap="8.0" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="215.0" styleClass="primary-color" text="Accounting" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/accounting.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="reportsBtn" alignment="TOP_LEFT" graphicTextGap="8.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="215.0" styleClass="primary-color" text="Reports" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/report.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="12.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="optionsBtn" alignment="TOP_LEFT" graphicTextGap="8.0" layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="215.0" styleClass="primary-color" text="Settings" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="12.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

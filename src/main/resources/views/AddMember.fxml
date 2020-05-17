@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="720.0" styleClass="thin-black-border" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.viper75.churchmgt.controllers.AddMemberController">
+   <stylesheets>
+      <URL value="@css/main.css" />
+   </stylesheets>
+
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="600.0" spacing="1.0" styleClass="thin-black-border" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="saveBtn" mnemonicParsing="false" styleClass="btn-bg-transparent" text="Save">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/save-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="56.0" prefWidth="0.0">
+               <padding>
+                  <Insets bottom="1.0" top="1.0" />
+               </padding>
+            </Separator>
+            <Button layoutX="11.0" layoutY="13.0" mnemonicParsing="false" styleClass="btn-bg-transparent" text="Import">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/ms-excel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="-1.0" right="-1.0" top="-1.0" />
+         </BorderPane.margin></HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="2.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="510.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="16.0" prefHeight="17.0" prefWidth="100.0" text="Salutation:" />
+                  <ComboBox fx:id="salutationCB" prefHeight="25.0" prefWidth="81.0" />
+                  <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="16.0" prefHeight="17.0" prefWidth="15.0" text="*" textFill="RED" />
+                  <Label alignment="CENTER_RIGHT" layoutX="192.0" layoutY="21.0" prefHeight="17.0" text="Lastname:" />
+                  <TextField fx:id="lastnameTF" layoutX="222.0" layoutY="17.0" prefHeight="25.0" prefWidth="225.0" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="0.0" prefWidth="510.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="43.0" text="*" textFill="RED" />
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="21.0" prefHeight="17.0" text="Firstname:" />
+                  <TextField fx:id="firstnameTF" prefHeight="25.0" prefWidth="380.0" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="0.0" prefWidth="510.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="21.0" prefHeight="17.0" prefWidth="100.0" text="Middle:" />
+                  <TextField fx:id="middleTF" prefHeight="25.0" prefWidth="225.0" />
+                  <Label alignment="CENTER_RIGHT" layoutX="192.0" layoutY="21.0" prefHeight="17.0" prefWidth="64.0" text="Suffix:" />
+                  <TextField fx:id="memberSuffixTF" layoutX="222.0" layoutY="17.0" prefHeight="25.0" prefWidth="87.0" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="86.0" prefHeight="0.0" prefWidth="510.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="21.0" prefHeight="17.0" prefWidth="100.0" text="Home Phone:" />
+                  <TextField fx:id="homePhoneTF" prefHeight="25.0" prefWidth="225.0" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="124.0" prefHeight="0.0" prefWidth="510.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="21.0" prefHeight="17.0" prefWidth="100.0" text="Cell Phone:" />
+                  <TextField fx:id="cellPhoneTF" prefHeight="25.0" prefWidth="225.0" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="162.0" prefHeight="4.0" prefWidth="510.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="21.0" prefHeight="17.0" prefWidth="100.0" text="Email:" />
+                  <TextField fx:id="emailTF" prefHeight="25.0" prefWidth="380.0" promptText="example@example.com" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="203.0" prefHeight="36.0" prefWidth="521.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="21.0" prefHeight="17.0" prefWidth="100.0" text="Is Main Member:" />
+                  <ComboBox fx:id="isMainMemberCB" prefHeight="25.0" prefWidth="81.0" />
+                  <TextField fx:id="familyIdTF" disable="true" editable="false" prefHeight="25.0" prefWidth="52.0">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="familyMainMemberNameTF" disable="true" editable="false" layoutX="235.0" layoutY="16.0" prefHeight="25.0" prefWidth="213.0" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <Label text="Home Address ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="316.0" prefHeight="36.0" prefWidth="521.0" spacing="2.0">
+               <children>
+                  <CheckBox fx:id="useFamilyAddressCheckBox" disable="true" mnemonicParsing="false" selected="true" text="Use Family Address">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="200.0" prefHeight="12.0" prefWidth="510.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="21.0" prefWidth="100.0" text="Address Line 1:" />
+                  <TextField fx:id="addressLine1TF" editable="false" prefHeight="25.0" prefWidth="380.0" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="238.0" prefHeight="15.0" prefWidth="510.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="21.0" prefWidth="100.0" text="Address Line 2:" />
+                  <TextField fx:id="addressLine2TF" editable="false" prefHeight="25.0" prefWidth="380.0" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="276.0" prefHeight="20.0" prefWidth="510.0" spacing="2.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="21.0" prefHeight="17.0" prefWidth="100.0" text="City:" />
+                  <TextField fx:id="cityTF" editable="false" prefHeight="25.0" prefWidth="213.0" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="399.0" prefWidth="193.0" spacing="2.0" styleClass="thin-black-border" BorderPane.alignment="CENTER">
+         <children>
+            <VBox disable="true" prefHeight="72.0" prefWidth="187.0" spacing="4.0" styleClass="thin-black-border">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label text="Member Status">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" selected="true" text="Active">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="memberStatusTG" />
+                     </toggleGroup>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton layoutX="11.0" layoutY="30.0" mnemonicParsing="false" text="Inactive" toggleGroup="$memberStatusTG">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </VBox>
+            <HBox layoutX="13.0" layoutY="150.0" prefHeight="6.0" prefWidth="187.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" text="*" textFill="RED" />
+                  <Label text="Gender:" />
+               </children>
+            </HBox>
+            <ComboBox fx:id="genderCB" layoutX="10.0" layoutY="204.0" prefWidth="185.0" />
+            <HBox prefHeight="6.0" prefWidth="187.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" text="*" textFill="RED" />
+                  <Label text="Marital Status:" />
+               </children>
+            </HBox>
+            <ComboBox fx:id="maritalStatusCB" prefHeight="25.0" prefWidth="185.0" />
+            <HBox layoutX="13.0" layoutY="104.0" prefHeight="6.0" prefWidth="187.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" text="*" textFill="RED" />
+                  <Label text="Member Type:" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="189.0" spacing="2.0">
+               <children>
+                  <ComboBox fx:id="memberTypeCB" prefHeight="25.0" prefWidth="149.0" />
+                  <Button fx:id="addMemberTypeBtn" mnemonicParsing="false" prefHeight="16.0" prefWidth="33.0" styleClass="btn-bg-transparent">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Label layoutX="10.0" layoutY="145.0" text="Relation" />
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="168.0" prefHeight="20.0" prefWidth="189.0" spacing="2.0">
+               <children>
+                  <ComboBox fx:id="relationCB" prefHeight="25.0" prefWidth="149.0" />
+                  <Button fx:id="addRelationBtn" mnemonicParsing="false" prefHeight="16.0" prefWidth="33.0" styleClass="btn-bg-transparent">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Label layoutX="10.0" layoutY="229.0" text="Birth Date:" />
+            <DatePicker fx:id="dobDP" prefHeight="25.0" prefWidth="185.0" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

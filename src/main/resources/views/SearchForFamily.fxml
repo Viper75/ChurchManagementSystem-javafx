@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="600.0" styleClass="thin-black-border" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.viper75.churchmgt.controllers.SearchForFamilyController">
+   <stylesheets>
+       <URL value="@css/main.css" />
+   </stylesheets>
+    <children>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0" spacing="2.0">
+         <children>
+            <Label text="Search For:" />
+            <TextField prefHeight="25.0" prefWidth="274.0" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="5.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="familyDtoTV" prefHeight="332.0" prefWidth="598.0">
+        <columns>
+          <TableColumn fx:id="familyIdCol" prefWidth="75.0" text="Family Id" />
+          <TableColumn fx:id="familyMainMemberCol" prefWidth="180.0" text="Family Main Member" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" prefHeight="11.0" prefWidth="600.0" spacing="2.0">
+         <children>
+            <Button fx:id="cancelBtn" mnemonicParsing="false" prefWidth="80.0" text="Cancel" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

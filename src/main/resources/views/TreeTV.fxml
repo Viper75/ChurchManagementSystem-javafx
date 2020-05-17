@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.viper75.churchmgt.controllers.TreeTVController">
+   <children>
+      <TreeTableView fx:id="currencyTreeTableView" layoutX="24.0" layoutY="54.0" prefHeight="309.0" prefWidth="563.0">
+        <columns>
+          <TreeTableColumn fx:id="currencyStringTreeTableColumn" prefWidth="75.0" text="C1" />
+          <TreeTableColumn fx:id="currencyBigDecimalTreeTableColumn" prefWidth="75.0" text="C2" />
+        </columns>
+      </TreeTableView>
+   </children>
+</AnchorPane>

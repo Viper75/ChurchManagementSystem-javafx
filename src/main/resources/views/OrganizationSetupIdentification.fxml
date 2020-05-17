@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<VBox fx:controller="org.viper75.churchmgt.controllers.OrganizationSetupIdentificationController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@css/main.css" />
+    </stylesheets>
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="32.0" prefWidth="135.0" styleClass="thin-black-border-bottom" text="Church Name" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="churchNameTF" prefHeight="25.0" prefWidth="488.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="135.0" styleClass="thin-black-border-bottom" text="Address" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="addressLine1TF" prefHeight="25.0" prefWidth="488.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <Label prefWidth="200.0" styleClass="thin-black-border-bottom" />
+            <TextField fx:id="addressLine2TF" prefHeight="25.0" prefWidth="488.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <Label prefWidth="200.0" styleClass="thin-black-border-bottom" />
+            <TextField fx:id="addressLine3TF" prefHeight="25.0" prefWidth="488.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <Label prefWidth="200.0" styleClass="thin-black-border-bottom" />
+            <TextField fx:id="addressLine4TF" prefHeight="25.0" prefWidth="488.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="140.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="135.0" styleClass="thin-black-border-bottom" text="Contact Person" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="contactPersonTF" prefHeight="25.0" prefWidth="275.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="140.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="135.0" styleClass="thin-black-border-bottom" text="Telephone Number" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="telephoneNumberTF" prefHeight="25.0" prefWidth="230.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="140.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="135.0" styleClass="thin-black-border-bottom" text="Fax Number" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="faxNumberTF" prefHeight="25.0" prefWidth="230.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="140.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="135.0" styleClass="thin-black-border-bottom" text="Contact Cellphone" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="contactCellphone" prefHeight="25.0" prefWidth="230.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="135.0" styleClass="thin-black-border-bottom" text="Email Address" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="emailAddress" prefHeight="25.0" prefWidth="488.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="140.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="135.0" styleClass="thin-black-border-bottom" text="Church Logo Path" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="churchLogoPath" editable="false" prefHeight="36.0" prefWidth="358.0" />
+            <Button fx:id="addLogoPathBtn" mnemonicParsing="false" prefHeight="8.0" prefWidth="34.0">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/attach.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="thin-black-border" />
+                  <String fx:value="btn-bg-transparent" />
+               </styleClass>
+               <HBox.margin>
+                  <Insets left="1.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="deleteLogoPath" layoutX="540.0" layoutY="11.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/drop.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="btn-bg-transparent" />
+                  <String fx:value="thin-black-border" />
+               </styleClass>
+               <HBox.margin>
+                  <Insets left="1.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="758.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="135.0" styleClass="thin-black-border-bottom" text="Church Motto" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="churchMoto" prefHeight="25.0" prefWidth="488.0" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="100.0" right="100.0" top="1.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+</VBox>

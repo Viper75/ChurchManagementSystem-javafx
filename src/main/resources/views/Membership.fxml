@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.viper75.churchmgt.controllers.MembershipController">
+    <stylesheets>
+        <URL value="@css/main.css" />
+    </stylesheets>
+   <top>
+      <HBox fx:id="titleHBox" alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="800.0" spacing="5.0" styleClass="secondary-color" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Members" textFill="#e8e8e8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <VBox prefHeight="50.0" prefWidth="930.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="11.0" prefWidth="926.0" spacing="5.0" styleClass="thin-black-border">
+                     <children>
+                        <Button fx:id="addMemberBtn" layoutX="16.0" layoutY="32.0" mnemonicParsing="false" styleClass="btn-bg-transparent">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/file-icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Separator layoutX="211.0" layoutY="11.0" orientation="VERTICAL" prefHeight="56.0" prefWidth="0.0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </Separator>
+                        <Button layoutX="15.0" layoutY="15.0" mnemonicParsing="false" styleClass="btn-bg-transparent" text="Import">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/ms-excel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="generateTemplateBtn" layoutX="64.0" layoutY="32.0" mnemonicParsing="false" styleClass="btn-bg-transparent" text="Generate Template">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/ms-excel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Separator layoutX="95.0" layoutY="15.0" orientation="VERTICAL" prefHeight="56.0" prefWidth="0.0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding></Separator>
+                        <MenuButton mnemonicParsing="false" prefHeight="10.0" prefWidth="128.0" styleClass="btn-bg-transparent" text="Manage">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="De-activate" />
+                            <MenuItem mnemonicParsing="false" text="De-activate Enmass" />
+                          </items>
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/manage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuButton>
+                        <Separator layoutX="62.0" layoutY="10.0" orientation="VERTICAL" prefHeight="36.0" prefWidth="2.0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding></Separator>
+                        <Button layoutX="24.0" layoutY="10.0" mnemonicParsing="false" styleClass="btn-bg-transparent" text="Print">
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/print.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Separator layoutX="62.0" layoutY="10.0" orientation="VERTICAL" prefHeight="56.0" prefWidth="0.0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding></Separator>
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="19.0" styleClass="btn-bg-transparent">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/refresh.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Separator orientation="VERTICAL" prefHeight="56.0" prefWidth="0.0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding></Separator>
+                        <Label text="Gender Filter" />
+                        <ComboBox editable="true" prefWidth="150.0" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Type Filter" />
+                        <ComboBox editable="true" layoutX="79.0" layoutY="10.0" prefWidth="150.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="600.0" spacing="5.0">
+                     <children>
+                        <Label text="Search By" />
+                        <ComboBox editable="true" prefWidth="150.0" />
+                        <Label text="Search for" />
+                        <TextField />
+                        <CheckBox mnemonicParsing="false" text="Active search" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="thin-black-border" />
+                        <String fx:value="light-blue" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <ScrollPane fx:id="membersSP" pannable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <content>
+                  <TableView fx:id="membersTV" prefWidth="1900.0">
+                    <columns>
+                        <TableColumn fx:id="checkBoxCol" prefWidth="37.0" resizable="false" sortable="false" />
+                      <TableColumn fx:id="memberIDCol" prefWidth="30.0" resizable="false" sortable="false" text="ID" />
+                      <TableColumn fx:id="memberFirstnameCol" prefWidth="115.0" resizable="false" sortable="false" text="FIRSTNAME" />
+                        <TableColumn fx:id="memberMiddleCol" prefWidth="115.0" resizable="false" sortable="false" text="MIDDLE " />
+                        <TableColumn fx:id="memberLastnameCol" prefWidth="115.0" resizable="false" sortable="false" text="LASTNAME" />
+                        <TableColumn fx:id="memberSalutationCol" resizable="false" sortable="false" text="SALUTATION" />
+                        <TableColumn fx:id="memberSuffixCol" resizable="false" sortable="false" text="SUFFIX" />
+                        <TableColumn fx:id="memberGenderCol" prefWidth="65.0" resizable="false" sortable="false" text="GENDER" />
+                        <TableColumn fx:id="memberMaritalStatusCol" prefWidth="120.0" resizable="false" sortable="false" text="MARITAL STATUS" />
+                        <TableColumn fx:id="memberDOBCol" resizable="false" sortable="false" text="D.O.B" />
+                        <TableColumn fx:id="memberCellPhoneCol" prefWidth="120.0" resizable="false" sortable="false" text="CELL PHONE" />
+                        <TableColumn fx:id="memberHomePhoneCol" prefWidth="120.0" resizable="false" sortable="false" text="HOME PHONE" />
+                        <TableColumn fx:id="memberEMailCol" prefWidth="200.0" resizable="false" sortable="false" text="E-MAIL" />
+                        <TableColumn fx:id="memberAddressCol" prefWidth="250.0" resizable="false" sortable="false" text="ADDRESS" />
+                        <TableColumn fx:id="memberRelationCol" resizable="false" sortable="false" text="RELATION" />
+                        <TableColumn fx:id="memberTypeCol" prefWidth="100.0" resizable="false" sortable="false" text="MEMBER TYPE" />
+                        <TableColumn fx:id="memberStatusCol" prefWidth="70.0" resizable="false" sortable="false" text="STATUS" />
+                        <TableColumn fx:id="mainMemberCol" prefWidth="120.0" resizable="false" sortable="false" text="MAIN MEMBER" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

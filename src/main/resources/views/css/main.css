@@ -1,0 +1,56 @@
+/*All Buttons Default Style*/
+.button, .text-field, .combo-box, .menu-button, .date-picker{
+    -fx-background-radius: 0;
+    fx-outline: none;
+}
+
+.thin-black-border{
+    -fx-border-color: rgba(0,0,0,.3);
+}
+
+.tab-pane:top *.tab-header-area{
+    -fx-background-radius: 0px;
+    -fx-background-insets: 0;
+    -fx-padding: 0 0 0 0;
+}
+
+.btn-bg-transparent{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+
+.table-view .column-header{
+    -fx-background-color: rgb(181, 181, 180);
+    -fx-border-color: #7f95a9;
+    -fx-font-weight: 200;
+}
+
+.table-view .table-row{
+    -fx-background-color: rgb(181, 181, 180);
+}
+
+.primary-color{
+    -fx-background-color: #3E788F;
+}
+
+.secondary-color{
+    -fx-background-color: #2A677F;
+}
+
+.primary-color .button:hover{
+    -fx-background-color: #2A677F;
+}
+
+.primary-color .button{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.bg-light{
+    -fx-background-color: #fff;
+}
+
+.setting:hover{
+    -fx-background-color: #e7eeff;
+}
